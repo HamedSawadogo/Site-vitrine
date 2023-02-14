@@ -19,15 +19,15 @@ let btnvalidate=document.getElementById('btnSubmit');
 let message=document.getElementById('message');
 
 const validateMessage=()=>{
-    message.addEventListener('input',()=>{
-    let messageValue=document.getElementById('message').value;
-    console.log(messageValue);
-    if(messageValue.length>2)
-    {    message.style.borderColor='green';
-         return true;
-    }  
-    else {  message.style.borderColor='red';}
-   })
+        message.addEventListener('input',()=>{
+        let messageValue=document.getElementById('message').value;
+        console.log(messageValue);
+        if(messageValue.length>2)
+        {    message.style.borderColor='green';
+            return true;
+        }  
+        else {  message.style.borderColor='red';}
+    })
    return false;
 };
 //
@@ -36,7 +36,6 @@ const  testEmail=(email)=>{
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     );
 }
-
 const validateEmail=()=>{
   email.addEventListener('input',(e)=>{
     let emailValue=e.target.value;
@@ -57,20 +56,20 @@ const validateEmail=()=>{
 } 
 //
 const validateName=()=>{
-    nom.addEventListener('input',(e)=>{
-        let nameValue=e.target.value;
-        let small=nom.nextElementSibling;
-        if(nameValue.length<2){
-            small.classList.add('text-danger');
-            small.innerHTML='veillez entrer un nom correct';
-            nom.style.borderColor='red';
-            return true;
-        }else{
-            small.classList.remove('text-danger');
-            small.classList.add('text-success');
-            nom.style.borderColor='green';
-            small.innerHTML='votre nom est correct';
-        }
+  nom.addEventListener('input',(e)=>{
+    let nameValue=e.target.value;
+    let small=nom.nextElementSibling;
+    if(nameValue.length<2){
+        small.classList.add('text-danger');
+        small.innerHTML='veillez entrer un nom correct';
+        nom.style.borderColor='red';
+        return true;
+    }else{
+        small.classList.remove('text-danger');
+        small.classList.add('text-success');
+        nom.style.borderColor='green';
+        small.innerHTML='votre nom est correct';
+    }
     });
     return true;
 }
