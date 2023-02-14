@@ -164,8 +164,12 @@ hr{
    }
 
 }
-
-
+#btnSubmit{
+    border-radius:20px;
+    &:hover{
+        background: $color-hover;
+    }
+}
 // section contact
 .contact{
     h2{
@@ -178,7 +182,6 @@ hr{
    }
 
 }
-
 .container-propos{
   display: flex;
   min-height:350px;

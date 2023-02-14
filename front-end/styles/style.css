@@ -145,6 +145,13 @@ hr {
   height: 200px;
 }
 
+#btnSubmit {
+  border-radius: 20px;
+}
+#btnSubmit:hover {
+  background: rgba(60, 194, 239, 0.47);
+}
+
 .contact h2 {
   text-align: center;
   margin-top: 20px;
