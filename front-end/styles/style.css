@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;700;800&family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: white;
+}
+
+.navigation {
+  width: 100%;
+  position: fixed;
+}
+
+.welcomme-bloc {
+  background-image: url(https://assets-global.website-files.com/5e469aaf314e562ff1146d3f/5f785557c289798410aacf76_graphic-design-on-ipad.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.welcomme-bloc .inscription-bloc {
+  margin-top: 20px;
+  text-align: center;
+}
+.welcomme-bloc .inscription-bloc:hover {
+  transform: scale(1.1);
+  transition: ease 0.3ms;
+}
+.welcomme-bloc .inscription-bloc .inscription-btn {
+  padding: 10px;
+  background-color: orange;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.welcomme-bloc .inscription-bloc .inscription-btn:hover {
+  transform: scale(1.1);
+  transition: ease 0.3ms;
+  background-color: olivedrab;
+}
+.welcomme-bloc h1 {
+  font-family: "Pacifico", cursive;
+  padding-top: 200px;
+  text-align: center;
+  color: white;
+}
+
+hr {
+  margin: 30px 0;
+  background-color: rgb(242, 239, 239);
+  width: 50%;
+  height: 1px;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.navigation {
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: olivedrab;
+}
+.navigation .logo {
+  color: white;
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  left: 6px;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: end;
+  line-height: 70px;
+}
+.navigation ul a {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+.navigation ul a:hover::after {
+  width: 100%;
+}
+.navigation ul a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: rgba(60, 194, 239, 0.47);
+  left: 0;
+  bottom: -10px;
+  transition: 0.7s;
+}
+
+.section-images .decouvrir {
+  font-family: "Manrope", sans-serif;
+  color: rgb(239, 93, 40);
+  text-align: center;
+  margin: 10px;
+}
+.section-images .formations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-images .formations h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+.section-images .formations .items {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid rgb(212, 207, 207);
+  padding-bottom: 12px;
+  margin: 10px;
+}
+.section-images .formations .items p {
+  text-align: center;
+  padding: 10px;
+}
+.section-images .formations .items a {
+  padding: 10px;
+  background-color: rgb(183, 49, 220);
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 40px;
+}
+.section-images .formations .items img {
+  width: 100%;
+  height: 200px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact .container-form {
+  width: 800px;
+  padding: 10px;
+}
+
+.container-propos {
+  display: flex;
+  min-height: 350px;
+  width: 90%;
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: -3px -5px 14px 11px rgba(207, 199, 199, 0.8117647059);
+}
+.container-propos .images {
+  width: 60%;
+  margin: 0px 5px;
+}
+.container-propos .images img {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  min-width: 300px;
+}
+.container-propos .text {
+  width: 70%;
+}
+.container-propos .text h2 {
+  font-family: "Manrope", sans-serif;
+  border-bottom: 2px solid olivedrab;
+  width: 290px;
+}
+
+/*# sourceMappingURL=style.css.map */

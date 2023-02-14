@@ -1,0 +1,19 @@
+{
+  "name": "site-vitrine",
+  "version": "1.0.0",
+  "description": "projet full-stack html css php mysql javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sawadogoxxx/Site-vitrine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sawadogoxxx/Site-vitrine/issues"
+  },
+  "homepage": "https://github.com/Sawadogoxxx/Site-vitrine#readme"
+}

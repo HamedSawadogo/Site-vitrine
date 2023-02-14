@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;700;800&family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap');
+
+
+$font-family: 'Nunito Sans', sans-serif;
+$logo-font:'Pacifico', cursive;
+$color-global:olivedrab;
+$font-title:'Dancing Script', cursive;
+$font-welcome:'Manrope', sans-serif;
+$color-hover:rgba(60, 194, 239, 0.47);
+
+@mixin button($color){
+    padding:10px;
+    background-color:$color;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    font-weight:bold;
+}
+@mixin positioning(){
+    display: flex;
+    align-items: center;    
+}
+
+
+body{
+    font-family: $font-family;
+    background-color: white;
+}
+
+
+.navigation{
+    width: 100%;
+    position: fixed;
+}
+
+.welcomme-bloc{
+    background-image: url(https://assets-global.website-files.com/5e469aaf314e562ff1146d3f/5f785557c289798410aacf76_graphic-design-on-ipad.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    .inscription-bloc{
+        margin-top: 20px;
+        text-align: center;
+        &:hover{
+            transform:scale(1.1);
+            transition:ease 0.3ms;
+        }
+        .inscription-btn{
+            @include button(orange);
+            &:hover{
+                transform:scale(1.1);
+                transition:ease 0.3ms;
+                background-color:$color-global;          
+            }
+        }
+    }
+    h1{
+        font-family: $logo-font;
+        padding-top:200px;
+        text-align: center;
+        color: white;
+    }
+}
+
+// hr
+
+hr{
+    margin:30px 0;
+    background-color: rgb(242, 239, 239);
+    width: 50%;
+    height: 1px;
+    margin-left:25%;
+    text-align: center;
+}
+.navigation{
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color:$color-global;
+
+    .logo{
+        color: white;
+        position: absolute;
+        font-family:$logo-font;
+        left: 6px;
+     }
+    ul{
+        @include positioning();
+        list-style-type: none;
+        justify-content: end;
+        line-height: 70px;
+        a{
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-size: 18px;
+            position: relative;
+            &:hover::after{
+                width: 100%;
+            }
+            &::after{
+                content:"";
+                width: 0%;
+                height: 3px;
+                position: absolute;
+                background-color:$color-hover;
+                left:0;
+                bottom:-10px;
+                transition: 0.7s;
+            }
+        }
+    }
+
+}
+.section-images{
+    
+
+    .decouvrir{
+        font-family: $font-welcome;
+        color: rgb(239, 93, 40);
+        text-align: center;
+        margin: 10px;
+     }
+    .formations{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;  
+        h2{
+           text-align: center;
+           font-family:$font-title;
+        }
+       .items{
+           width: 300px;
+           height:auto;
+           border-radius:5px;
+           border: 1px solid rgb(212, 207, 207);
+           padding-bottom:12px;
+           margin: 10px;
+           p{
+               text-align: center;
+               padding: 10px;
+           }
+           a{
+               @include button(rgb(183, 49, 220));
+               padding: 8px;
+               margin:40px;
+             }
+           img{
+               width:100%;
+               height:200px;
+           }
+       }
+   }
+
+}
+
+
+// section contact
+.contact{
+    h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+   .container-form{
+    width: 800px;
+    padding: 10px;
+   }
+
+}
+
+.container-propos{
+  display: flex;
+  min-height:350px;
+  width: 90%;
+  margin:50px auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow:-3px -5px 14px 11px #cfc7c7cf;
+
+  .images{
+       width:60%;
+       margin: 0px 5px;
+      img{
+         width:100%;
+         height: 100%;
+         padding: 6px;
+         min-width: 300px;
+      }
+  }
+  .text{
+    h2{
+      font-family: $font-welcome;
+      border-bottom: 2px solid $color-global;
+      width:290px;
+    }
+    width:70%;
+  }
+}
